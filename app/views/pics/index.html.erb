@@ -1,0 +1,15 @@
+
+	<% @pics.each do |banana| %>
+	<div class="ice-box span3 text-center">
+		<h2>
+			<%= banana.title %>
+		</h2>
+		<h3>
+			<%= banana.message %>
+		</h3>
+		<h3>
+			<%= banana.who %>
+		</h3>
+		<br />
+	</div>
+	<% end %>
