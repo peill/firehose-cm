@@ -1,9 +1,12 @@
 
-<div class= "ice-box" >
+<div class= "ice-box span6 offset3 text-center" >
+<h1 class="font-family">
+	share your star treck gift
+</h1>		
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :title %>
-		<%= f.input :message %>
-		<%= f.input :who %>
-		<%= f.submit 'Save' %> 
+		<%= f.input :title, label: 'Enter your Title', placeholder: 'e.g. Riker Claps, Borg is cool' %>
+		<%= f.input :message,label: 'What is going on?', placeholder: 'e.g. Pizza madness' %>
+		<%= f.input :who, label: "Who is this?", placeholder: 'e.g. Riker,Picard, Borg, etc.' %>
+		<%= f.submit 'Save', :class => 'btn btn-inverse btn-large' %> 
 	<% end %>	
 </div>
