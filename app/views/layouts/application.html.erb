@@ -20,17 +20,17 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">GBA Navagation</a>
+      <%= link_to 'GBA Navagation', root_path, :class => 'brand' %>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
         <!-- .nav, .navbar-search, .navbar-form, etc -->
         <ul class = "nav">
         	<li>
-        		<%= link_to 'Link1', '#' %>
+        		<%= link_to 'Homework', pics_path %>
         	</li>
         	<li>
-        		<%= link_to 'Link2', '#' %>
+        		<%= link_to 'New', new_pic_path %>
         	</li>	
         </ul>
       </div>
